@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/4ba66cb529.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+    </div>
+    <div class="chat">
+      <div class="chat-container">
+        <div class="chat-wrapper">
+          <img src="https://www.sciastra.com/Assets/Images/new_logo_sci(1).png" alt="" width="40px" style="margin-right: 10px;"> 
+          <p>Hello, How can we help you?</p>
+        </div>
+        <div class="message-area">
+          <p class="message incoming">What do you want?</p>
+          <div class="suggestion">
+            <h4>Choose From the below options</h4>
+            <p><a href="">Courses</a> </p>
+            <p><a href="">Selections</a> </p>
+            <p><a href="">Materials</a> </p>
+            <p onclick="handleClick(event)">FAQs </p>
+          </div>
+        </div>
+        <div class="chat-input">
+          <textarea
+            id="textarea"
+            cols="30"
+            rows="1"
+            placeholder="Write a message..."
+            onkeyup="handleKeyUp(event)"
+          ></textarea>
+        </div>
+      </div>
+      <button onclick="toggleChat()">
+        <i class="fa-regular fa-comments fa-2xl"></i>
+      </button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
